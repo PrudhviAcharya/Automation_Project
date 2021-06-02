@@ -44,10 +44,10 @@ s3://${s3_bucket}/${myname}-httpd-logs-${timestamp}.tar
 inventory_file='/var/www/html/inventory.html'
 if [ ! -e $inventory_file]
 then
-			printf "<html><body><h3>Log-Type$emsp;emsp;Time Created&emsp;&emsp;Type&emsp;emsp;Size</h3></body></html>" >> $inventory_file
-			printf "<p>httpd-logs&emsp;&emsp;&emsp;$timestamp&emsp;&emsp;&emsp;tar&emsp;emsp;&emsp;$tar-size</p>" >> $inventory_file
+			printf "<html><body><h3>Log-Type&emsp;&emsp;Time Created&emsp;&emsp;Type&emsp;&emsp;Size</h3></body></html>" >> $inventory_file
+			printf "<p>httpd-logs&emsp;&emsp;&emsp;$timestamp&emsp;&emsp;&emsp;tar&emsp;&emsp;&emsp;$tar-size</p>" >> $inventory_file
 else
-			printf "<p>httpd-logs&emsp;&emsp;&emsp;$timestamp&emsp;&emsp;&emsp;tar&emsp;emsp;&emsp;$tar-size</p>" >> $inventory_file
+			printf "<p>httpd-logs&emsp;&emsp;&emsp;$timestamp&emsp;&emsp;&emsp;tar&emsp;&emsp;&emsp;$tar-size</p>" >> $inventory_file
 fi
 
 
